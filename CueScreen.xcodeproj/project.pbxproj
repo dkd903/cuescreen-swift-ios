@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A55FFCB31A1D792600262227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FFCB21A1D792600262227 /* AppDelegate.swift */; };
+		A55FFCB51A1D792600262227 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FFCB41A1D792600262227 /* ViewController.swift */; };
+		A55FFCB81A1D792600262227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55FFCB61A1D792600262227 /* Main.storyboard */; };
+		A55FFCBA1A1D792600262227 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55FFCB91A1D792600262227 /* Images.xcassets */; };
+		A55FFCBD1A1D792600262227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55FFCBB1A1D792600262227 /* LaunchScreen.xib */; };
+		A55FFCC91A1D792700262227 /* CueScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FFCC81A1D792700262227 /* CueScreenTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A55FFCC31A1D792700262227 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A55FFCA51A1D792600262227 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A55FFCAC1A1D792600262227;
+			remoteInfo = CueScreen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A55FFCAD1A1D792600262227 /* CueScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55FFCB11A1D792600262227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55FFCB21A1D792600262227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A55FFCB41A1D792600262227 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A55FFCB71A1D792600262227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A55FFCB91A1D792600262227 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A55FFCBC1A1D792600262227 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A55FFCC21A1D792700262227 /* CueScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CueScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A55FFCC71A1D792700262227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A55FFCC81A1D792700262227 /* CueScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CueScreenTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A55FFCAA1A1D792600262227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55FFCBF1A1D792700262227 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A55FFCA41A1D792600262227 = {
+			isa = PBXGroup;
+			children = (
+				A55FFCAF1A1D792600262227 /* CueScreen */,
+				A55FFCC51A1D792700262227 /* CueScreenTests */,
+				A55FFCAE1A1D792600262227 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A55FFCAE1A1D792600262227 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A55FFCAD1A1D792600262227 /* CueScreen.app */,
+				A55FFCC21A1D792700262227 /* CueScreenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A55FFCAF1A1D792600262227 /* CueScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A55FFCB21A1D792600262227 /* AppDelegate.swift */,
+				A55FFCB41A1D792600262227 /* ViewController.swift */,
+				A55FFCB61A1D792600262227 /* Main.storyboard */,
+				A55FFCB91A1D792600262227 /* Images.xcassets */,
+				A55FFCBB1A1D792600262227 /* LaunchScreen.xib */,
+				A55FFCB01A1D792600262227 /* Supporting Files */,
+			);
+			path = CueScreen;
+			sourceTree = "<group>";
+		};
+		A55FFCB01A1D792600262227 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A55FFCB11A1D792600262227 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A55FFCC51A1D792700262227 /* CueScreenTests */ = {
+			isa = PBXGroup;
+			children = (
+				A55FFCC81A1D792700262227 /* CueScreenTests.swift */,
+				A55FFCC61A1D792700262227 /* Supporting Files */,
+			);
+			path = CueScreenTests;
+			sourceTree = "<group>";
+		};
+		A55FFCC61A1D792700262227 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A55FFCC71A1D792700262227 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A55FFCAC1A1D792600262227 /* CueScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A55FFCCC1A1D792700262227 /* Build configuration list for PBXNativeTarget "CueScreen" */;
+			buildPhases = (
+				A55FFCA91A1D792600262227 /* Sources */,
+				A55FFCAA1A1D792600262227 /* Frameworks */,
+				A55FFCAB1A1D792600262227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CueScreen;
+			productName = CueScreen;
+			productReference = A55FFCAD1A1D792600262227 /* CueScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A55FFCC11A1D792700262227 /* CueScreenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A55FFCCF1A1D792700262227 /* Build configuration list for PBXNativeTarget "CueScreenTests" */;
+			buildPhases = (
+				A55FFCBE1A1D792700262227 /* Sources */,
+				A55FFCBF1A1D792700262227 /* Frameworks */,
+				A55FFCC01A1D792700262227 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A55FFCC41A1D792700262227 /* PBXTargetDependency */,
+			);
+			name = CueScreenTests;
+			productName = CueScreenTests;
+			productReference = A55FFCC21A1D792700262227 /* CueScreenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A55FFCA51A1D792600262227 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = com.cuescreen.app;
+				TargetAttributes = {
+					A55FFCAC1A1D792600262227 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					A55FFCC11A1D792700262227 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = A55FFCAC1A1D792600262227;
+					};
+				};
+			};
+			buildConfigurationList = A55FFCA81A1D792600262227 /* Build configuration list for PBXProject "CueScreen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A55FFCA41A1D792600262227;
+			productRefGroup = A55FFCAE1A1D792600262227 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A55FFCAC1A1D792600262227 /* CueScreen */,
+				A55FFCC11A1D792700262227 /* CueScreenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A55FFCAB1A1D792600262227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55FFCB81A1D792600262227 /* Main.storyboard in Resources */,
+				A55FFCBD1A1D792600262227 /* LaunchScreen.xib in Resources */,
+				A55FFCBA1A1D792600262227 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55FFCC01A1D792700262227 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A55FFCA91A1D792600262227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55FFCB51A1D792600262227 /* ViewController.swift in Sources */,
+				A55FFCB31A1D792600262227 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A55FFCBE1A1D792700262227 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A55FFCC91A1D792700262227 /* CueScreenTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A55FFCC41A1D792700262227 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A55FFCAC1A1D792600262227 /* CueScreen */;
+			targetProxy = A55FFCC31A1D792700262227 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A55FFCB61A1D792600262227 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A55FFCB71A1D792600262227 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A55FFCBB1A1D792600262227 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A55FFCBC1A1D792600262227 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A55FFCCA1A1D792700262227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A55FFCCB1A1D792700262227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A55FFCCD1A1D792700262227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CueScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A55FFCCE1A1D792700262227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CueScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A55FFCD01A1D792700262227 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CueScreenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CueScreen.app/CueScreen";
+			};
+			name = Debug;
+		};
+		A55FFCD11A1D792700262227 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CueScreenTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CueScreen.app/CueScreen";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A55FFCA81A1D792600262227 /* Build configuration list for PBXProject "CueScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55FFCCA1A1D792700262227 /* Debug */,
+				A55FFCCB1A1D792700262227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A55FFCCC1A1D792700262227 /* Build configuration list for PBXNativeTarget "CueScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55FFCCD1A1D792700262227 /* Debug */,
+				A55FFCCE1A1D792700262227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A55FFCCF1A1D792700262227 /* Build configuration list for PBXNativeTarget "CueScreenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A55FFCD01A1D792700262227 /* Debug */,
+				A55FFCD11A1D792700262227 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A55FFCA51A1D792600262227 /* Project object */;
+}
