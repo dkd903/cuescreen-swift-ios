@@ -13,6 +13,12 @@
 		A55FFCBA1A1D792600262227 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A55FFCB91A1D792600262227 /* Images.xcassets */; };
 		A55FFCBD1A1D792600262227 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A55FFCBB1A1D792600262227 /* LaunchScreen.xib */; };
 		A55FFCC91A1D792700262227 /* CueScreenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FFCC81A1D792700262227 /* CueScreenTests.swift */; };
+		A55FFCD31A1D80B900262227 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FFCD21A1D80B900262227 /* LoginVC.swift */; };
+		A55FFCD51A1DA7E100262227 /* CuePieceHeader.png in Resources */ = {isa = PBXBuildFile; fileRef = A55FFCD41A1DA7E100262227 /* CuePieceHeader.png */; };
+		A55FFCD91A1DAFE900262227 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FFCD81A1DAFE900262227 /* CircleView.swift */; };
+		A55FFCDB1A1F1CAF00262227 /* HomeIcon_CueScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = A55FFCDA1A1F1CAF00262227 /* HomeIcon_CueScreen.png */; };
+		A5ACAE211A20FB7700F2C94D /* CircleViewGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACAE201A20FB7700F2C94D /* CircleViewGrey.swift */; };
+		A5ACAE231A21517B00F2C94D /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ACAE221A21517B00F2C94D /* ViewControllerUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,12 @@
 		A55FFCC21A1D792700262227 /* CueScreenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CueScreenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55FFCC71A1D792700262227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A55FFCC81A1D792700262227 /* CueScreenTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CueScreenTests.swift; sourceTree = "<group>"; };
+		A55FFCD21A1D80B900262227 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../LoginVC.swift; sourceTree = "<group>"; };
+		A55FFCD41A1DA7E100262227 /* CuePieceHeader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CuePieceHeader.png; sourceTree = "<group>"; };
+		A55FFCD81A1DAFE900262227 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleView.swift; path = ../CircleView.swift; sourceTree = "<group>"; };
+		A55FFCDA1A1F1CAF00262227 /* HomeIcon_CueScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HomeIcon_CueScreen.png; sourceTree = "<group>"; };
+		A5ACAE201A20FB7700F2C94D /* CircleViewGrey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewGrey.swift; sourceTree = "<group>"; };
+		A5ACAE221A21517B00F2C94D /* ViewControllerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +89,17 @@
 		A55FFCAF1A1D792600262227 /* CueScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A55FFCD81A1DAFE900262227 /* CircleView.swift */,
+				A5ACAE201A20FB7700F2C94D /* CircleViewGrey.swift */,
 				A55FFCB21A1D792600262227 /* AppDelegate.swift */,
+				A55FFCD21A1D80B900262227 /* LoginVC.swift */,
+				A5ACAE221A21517B00F2C94D /* ViewControllerUtils.swift */,
 				A55FFCB41A1D792600262227 /* ViewController.swift */,
 				A55FFCB61A1D792600262227 /* Main.storyboard */,
 				A55FFCB91A1D792600262227 /* Images.xcassets */,
 				A55FFCBB1A1D792600262227 /* LaunchScreen.xib */,
+				A55FFCDA1A1F1CAF00262227 /* HomeIcon_CueScreen.png */,
+				A55FFCD41A1DA7E100262227 /* CuePieceHeader.png */,
 				A55FFCB01A1D792600262227 /* Supporting Files */,
 			);
 			path = CueScreen;
@@ -193,6 +211,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A55FFCB81A1D792600262227 /* Main.storyboard in Resources */,
+				A55FFCDB1A1F1CAF00262227 /* HomeIcon_CueScreen.png in Resources */,
+				A55FFCD51A1DA7E100262227 /* CuePieceHeader.png in Resources */,
 				A55FFCBD1A1D792600262227 /* LaunchScreen.xib in Resources */,
 				A55FFCBA1A1D792600262227 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +232,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A55FFCD91A1DAFE900262227 /* CircleView.swift in Sources */,
 				A55FFCB51A1D792600262227 /* ViewController.swift in Sources */,
+				A5ACAE231A21517B00F2C94D /* ViewControllerUtils.swift in Sources */,
+				A5ACAE211A20FB7700F2C94D /* CircleViewGrey.swift in Sources */,
 				A55FFCB31A1D792600262227 /* AppDelegate.swift in Sources */,
+				A55FFCD31A1D80B900262227 /* LoginVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +349,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -337,6 +361,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CueScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CueScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -405,6 +431,7 @@
 				A55FFCCE1A1D792700262227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A55FFCCF1A1D792700262227 /* Build configuration list for PBXNativeTarget "CueScreenTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +440,7 @@
 				A55FFCD11A1D792700262227 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
