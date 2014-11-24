@@ -80,60 +80,93 @@
                                 <color key="textColor" red="0.48728918650000003" green="0.48728918650000003" blue="0.48728918650000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" id="EdJ-hI-d77">
-                                <rect key="frame" x="261" y="225" width="20" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="0kh-V7-kuO">
-                                <rect key="frame" x="261" y="266" width="20" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.66666666666666663" green="0.55305817017856529" blue="0.15808733134990538" alpha="1" colorSpace="calibratedRGB"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="hhQ-5a-fzf">
-                                <rect key="frame" x="261" y="310" width="20" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="SFg-yN-qsn">
-                                <rect key="frame" x="261" y="353" width="20" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="ut8-3V-JK4">
-                                <rect key="frame" x="261" y="398" width="20" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" id="MiD-Kr-BUL">
-                                <rect key="frame" x="261" y="444" width="20" height="19"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait for the voting to begin..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yEc-19-Wdn">
-                                <rect key="frame" x="4" y="549" width="203" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="XMN-9T-eLy">
-                                <rect key="frame" x="279" y="547" width="37" height="26"/>
+                                <rect key="frame" x="307" y="547" width="6" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <state key="normal" title="Logout">
+                                <state key="normal" title="&gt;">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="goBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="y6w-RL-30w"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="               Please wait for the voting to begin..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yEc-19-Wdn">
+                                <rect key="frame" x="0.0" y="179" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="H2R-qP-2JW">
+                                <rect key="frame" x="256" y="223" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="normalButton.jpeg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="voteBtn1Clicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="17N-qG-Vgu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fYT-Zn-ocR">
+                                <rect key="frame" x="256" y="264" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="normalButton.jpeg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="voteBtn2Clicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="sOq-ch-1rZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="wPp-eB-Gih">
+                                <rect key="frame" x="256" y="308" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="normalButton.jpeg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="voteBtn3Clicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t4L-WC-1KN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Mxe-3p-0Pw">
+                                <rect key="frame" x="256" y="351" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="normalButton.jpeg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="voteBtn4Clicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fqL-w3-RNe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZfK-Lp-ARr">
+                                <rect key="frame" x="256" y="396" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="normalButton.jpeg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="voteBtn5Clicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="p3E-Yy-hv1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Thg-nh-Hcs">
+                                <rect key="frame" x="256" y="442" width="24" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="normalButton.jpeg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="voteBtn6Clicked:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="rFk-9b-Bjk"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="                               Voting is over!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yGF-DR-JBP">
+                                <rect key="frame" x="0.0" y="20" width="320" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.40000000000000002" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98072794916440176" green="1" blue="0.95700763297326341" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -141,7 +174,14 @@
                     <connections>
                         <outlet property="timerLabel" destination="xGv-Se-Wt6" id="Tj2-Or-tiE"/>
                         <outlet property="userName" destination="106-0H-QLD" id="gTY-nY-5nB"/>
+                        <outlet property="voteBtn1" destination="H2R-qP-2JW" id="SCw-ks-CqV"/>
+                        <outlet property="voteBtn2" destination="fYT-Zn-ocR" id="EQo-oX-fmm"/>
+                        <outlet property="voteBtn3" destination="wPp-eB-Gih" id="Uea-sC-vGX"/>
+                        <outlet property="voteBtn4" destination="Mxe-3p-0Pw" id="7u0-bS-bAy"/>
+                        <outlet property="voteBtn5" destination="ZfK-Lp-ARr" id="ANw-C1-Vif"/>
+                        <outlet property="voteBtn6" destination="Thg-nh-Hcs" id="hn9-Ki-as2"/>
                         <outlet property="votingInfoLabel" destination="4is-Ik-fg5" id="cUs-8u-VNN"/>
+                        <outlet property="votingOver" destination="yGF-DR-JBP" id="gdj-Ea-xuO"/>
                         <outlet property="votingWaitLabel" destination="yEc-19-Wdn" id="FRH-mx-rWB"/>
                         <segue destination="6d5-z9-La7" kind="modal" identifier="toLoginScreen" modalPresentationStyle="currentContext" modalTransitionStyle="flipHorizontal" id="zKt-kF-NZc"/>
                     </connections>
@@ -225,6 +265,7 @@
     </scenes>
     <resources>
         <image name="CuePieceHeader.png" width="640" height="359"/>
+        <image name="normalButton.jpeg" width="38" height="38"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A50A16621A22B3E400196C75 /* checkedButton.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A50A16601A22B3E400196C75 /* checkedButton.jpeg */; };
+		A50A16631A22B3E400196C75 /* normalButton.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = A50A16611A22B3E400196C75 /* normalButton.jpeg */; };
 		A55FFCB31A1D792600262227 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FFCB21A1D792600262227 /* AppDelegate.swift */; };
 		A55FFCB51A1D792600262227 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A55FFCB41A1D792600262227 /* ViewController.swift */; };
 		A55FFCB81A1D792600262227 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A55FFCB61A1D792600262227 /* Main.storyboard */; };
@@ -32,6 +34,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A50A16601A22B3E400196C75 /* checkedButton.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = checkedButton.jpeg; sourceTree = "<group>"; };
+		A50A16611A22B3E400196C75 /* normalButton.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = normalButton.jpeg; sourceTree = "<group>"; };
 		A55FFCAD1A1D792600262227 /* CueScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A55FFCB11A1D792600262227 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A55FFCB21A1D792600262227 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +103,8 @@
 				A55FFCB91A1D792600262227 /* Images.xcassets */,
 				A55FFCBB1A1D792600262227 /* LaunchScreen.xib */,
 				A55FFCDA1A1F1CAF00262227 /* HomeIcon_CueScreen.png */,
+				A50A16601A22B3E400196C75 /* checkedButton.jpeg */,
+				A50A16611A22B3E400196C75 /* normalButton.jpeg */,
 				A55FFCD41A1DA7E100262227 /* CuePieceHeader.png */,
 				A55FFCB01A1D792600262227 /* Supporting Files */,
 			);
@@ -212,9 +218,11 @@
 			files = (
 				A55FFCB81A1D792600262227 /* Main.storyboard in Resources */,
 				A55FFCDB1A1F1CAF00262227 /* HomeIcon_CueScreen.png in Resources */,
+				A50A16631A22B3E400196C75 /* normalButton.jpeg in Resources */,
 				A55FFCD51A1DA7E100262227 /* CuePieceHeader.png in Resources */,
 				A55FFCBD1A1D792600262227 /* LaunchScreen.xib in Resources */,
 				A55FFCBA1A1D792600262227 /* Images.xcassets in Resources */,
+				A50A16621A22B3E400196C75 /* checkedButton.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

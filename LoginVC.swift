@@ -60,9 +60,7 @@ class LoginVC: UIViewController {
             prefs.synchronize()
             self.dismissViewControllerAnimated(true, completion: nil)
             
-            let url = NSURL(string: "luxojr.cs.rit.edu:9000/soundExchange/login")
-            
-            var request = NSMutableURLRequest(URL: NSURL(string: "http://luxojr.cs.rit.edu:9000/soundExchange/login")!)
+            var request = NSMutableURLRequest(URL: NSURL(string: "http://rewar.ds/cmapi/login.php")!)
             var session = NSURLSession.sharedSession()
             request.HTTPMethod = "POST"
             
@@ -91,7 +89,8 @@ class LoginVC: UIViewController {
                     // check and make sure that json has a value using optional binding.
                     if let parseJSON = json {
                         // Okay, the parsedJSON is here, let's get the value for 'success' out of it
-                        var success = parseJSON["success"] as? Int
+                        var success = parseJSON["userId"] as? String
+                        prefs.setObject(success, forKey: "USERID")
                         NSLog("Succes: \(success)")
                     }
                     else {
