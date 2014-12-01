@@ -54,9 +54,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //check if voting is allowed
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("isVotingPermitted"), userInfo: nil, repeats: true)
-        
         let rgbValue = 0xF7FAF1
         let r = Float((rgbValue & 0xFF0000) >> 16)/255.0
         let g = Float((rgbValue & 0xFF00) >> 8)/255.0
@@ -98,6 +95,9 @@ class ViewController: UIViewController {
             self.performSegueWithIdentifier("toLoginScreen", sender: self)
             
         } else {
+            
+            //check if voting is allowed
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("isVotingPermitted"), userInfo: nil, repeats: true)
             
             ViewControllerUtils().showActivityIndicator(self.view, container: container, loadingView: loadingView, activityIndicator: activityIndicator)
             
@@ -187,10 +187,11 @@ class ViewController: UIViewController {
                 // check and make sure that json has a value using optional binding.
                 if let parseJSON = json {
                     // Okay, the parsedJSON is here, let's get the value for 'success' out of it
-                    var success = parseJSON["voting"] as? String
-                    //NSLog("Succes: \(success)")
-                    
-                    if (success == "yes") {
+                    var isVotingEnabled = parseJSON["voting"] as? String
+                    var nextCell = parseJSON["cellNumber"] as? String
+                    NSLog("cellViewTracker: \(self.cellViewTracker)")
+                    NSLog("nextCell: \(nextCell)")
+                    if (isVotingEnabled == "yes" && String(self.cellViewTracker) == nextCell) {
                         if (self.showVotingBlockScreen == 0) {
                             
                         } else {
@@ -201,9 +202,10 @@ class ViewController: UIViewController {
                                 // Show the alert
                                 //alert.show()
                                 self.votingWaitLabel.hidden = true
+                                
                                 ViewControllerUtils().hideActivityIndicator(self.view, container: self.container, loadingView: self.loadingView, activityIndicator: self.activityIndicator)
                                 
-                                self.timer.invalidate()
+                                //self.timer.invalidate()
                                 
                                 self.cellDetectTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("votingStarted"), userInfo: nil, repeats: true)
                                 
@@ -267,6 +269,10 @@ class ViewController: UIViewController {
             
             self.updateVoteUIElements()
             self.resetVotes()
+            
+            self.cellDetectTimer.invalidate()
+            ViewControllerUtils().showActivityIndicator(self.view, container: container, loadingView: loadingView, activityIndicator: activityIndicator)
+            
         }
         
         
