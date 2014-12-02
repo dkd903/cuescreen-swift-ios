@@ -44,6 +44,7 @@ class ViewController: UIViewController {
     
     var timer : NSTimer!
     var cellDetectTimer : NSTimer!
+    var waitForNextVoting : NSTimer!
     
     var showVotingBlockScreen = 1
     
@@ -95,6 +96,15 @@ class ViewController: UIViewController {
             self.performSegueWithIdentifier("toLoginScreen", sender: self)
             
         } else {
+            
+            self.votingInfoLabel.text = "remaining in cell 1 voting"
+            self.timerLabel.text = "00:" + String(self.cellDuration)
+            self.cellViewTracker = 1
+            self.cellDurationTracker = 0
+            self.showVotingBlockScreen = 1
+            self.votingWaitLabel.hidden = false
+            //self.votingWaitLabel.text = "Please wait for the Voting to begin..."
+            
             
             //check if voting is allowed
             timer = NSTimer.scheduledTimerWithTimeInterval(0.5, target: self, selector: Selector("isVotingPermitted"), userInfo: nil, repeats: true)
@@ -191,7 +201,7 @@ class ViewController: UIViewController {
                     var nextCell = parseJSON["cellNumber"] as? String
                     NSLog("cellViewTracker: \(self.cellViewTracker)")
                     NSLog("nextCell: \(nextCell)")
-                    if (isVotingEnabled == "yes" && String(self.cellViewTracker) == nextCell) {
+                    if (isVotingEnabled == "yes") {
                         if (self.showVotingBlockScreen == 0) {
                             
                         } else {
@@ -205,7 +215,7 @@ class ViewController: UIViewController {
                                 
                                 ViewControllerUtils().hideActivityIndicator(self.view, container: self.container, loadingView: self.loadingView, activityIndicator: self.activityIndicator)
                                 
-                                //self.timer.invalidate()
+                                self.timer.invalidate()
                                 
                                 self.cellDetectTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("votingStarted"), userInfo: nil, repeats: true)
                                 
@@ -271,9 +281,40 @@ class ViewController: UIViewController {
             self.resetVotes()
             
             self.cellDetectTimer.invalidate()
-            ViewControllerUtils().showActivityIndicator(self.view, container: container, loadingView: loadingView, activityIndicator: activityIndicator)
+            
+            if (self.cellViewTracker < 6) {
+                
+                self.votingWaitLabel.hidden = false
+                
+                ViewControllerUtils().showActivityIndicator(self.view, container: container, loadingView: loadingView, activityIndicator: activityIndicator)
+                
+                self.waitForNextVoting = NSTimer.scheduledTimerWithTimeInterval(5, target: self, selector: Selector("resumeVoting"), userInfo: nil, repeats: false)
+            
+            }
+            
+            if (self.cellViewTracker == 6) {
+                self.votingWaitLabel.hidden = false
+                self.votingWaitLabel.text = "Voting Over!"
+            }
             
         }
+        
+        
+    }
+    
+    func resumeVoting() {
+        
+        self.waitForNextVoting.invalidate()
+        self.cellDetectTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: Selector("votingStarted"), userInfo: nil, repeats: true)
+        
+        
+        //dispatch_async(dispatch_get_main_queue(), { () -> Void in
+            
+            self.votingWaitLabel.hidden = true
+            
+            ViewControllerUtils().hideActivityIndicator(self.view, container: self.container, loadingView: self.loadingView, activityIndicator: self.activityIndicator)
+            
+        //})
         
         
     }
